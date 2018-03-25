@@ -1,11 +1,9 @@
 filename = ARGV.first
+txt = open (filename)
 
-txt = open(filename)
-
-puts "Here's your file #{filename}:"
+puts "Here is your file #{filename}:"
 print txt.read
 
-#print txt.close
 print "Type the filename again: "
 file_again = $stdin.gets.chomp
 
